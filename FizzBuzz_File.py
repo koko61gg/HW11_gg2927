@@ -1,5 +1,13 @@
 
-
 def FizzBuzz(start, finish):
-    v = ['buzz', 41, 'fizz', 43, 44, 'fizzbuzz']
-    return(v)
+    outlist = []
+    for n in range(start, finish + 1):
+        if n % 3 == 0 and n % 5 == 0:
+            outlist.append("fizzbuzz")
+        elif n % 3 == 0:
+            outlist.append("fizz")
+        elif n % 5 == 0:
+            outlist.append("buzz")
+        else:
+            outlist.append(n)
+    return(outlist)
